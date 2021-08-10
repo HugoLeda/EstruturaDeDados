@@ -4,3 +4,8 @@ def tempo(segundos: int):
   horas = (segundos / 60) / 60
   minutos = segundos / 60
   res = {"horas": horas, "minutos": minutos, "segundos": segundos}
+  return res
+
+seg = int(input('Informe o tempo de duração em segundo: '))
+res = tempo(seg)
+print(res)
