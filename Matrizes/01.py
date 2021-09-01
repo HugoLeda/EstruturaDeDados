@@ -41,6 +41,17 @@ def alterarMatriz(a: list):
   a = linha2para8(a)
   #a = mudarDuasColunas(a, 4, 10)
 
+def inverterDiagonais(a: list):
+  principal = []
+  secundaria = []
+
+  for i in range(10):
+    for j in range(10):
+      if (i == j):
+        principal.append(a[i][j])
+        secundaria.append(a)
+
+
 def printarMatrizLinhas(matriz):
   for i in range(len(matriz)):
     print(matriz[i])
