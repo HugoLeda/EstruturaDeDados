@@ -17,7 +17,7 @@ def somarLinhas(a: list):
 a = [0] * 5
 
 for i in range(len(a)):
-    a[i] = [random.randint(0, 100)] * 12
+  a[i] = [random.randint(0, 100)] * 12
 
 somaDasLinhas = somarLinhas(a)
 print(somaDasLinhas)

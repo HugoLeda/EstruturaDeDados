@@ -4,9 +4,9 @@ import random
 
 def somarLinhasPares(b: list):
   soma = 0
-  for i in range(9):
+  for i in range(len(b)):
     if (((i + 1) % 2) == 0):
-      for j in range(9):
+      for j in range(len(b)):
         soma += b[i][j]  
   return soma
 
