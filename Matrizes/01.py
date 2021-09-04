@@ -37,22 +37,40 @@ def mudarDuasColunas(a: list, c1: int, c2: int):
   
   return a
 
-def alterarMatriz(a: list):
-  a = linha2para8(a)
-  a = mudarDuasColunas(a, 4, 10)
-  a = mudarDuasColunas(a, 5, 10)
-
 def inverterDiagonais(a: list):
   principal = []
   secundaria = []
 
-  for i in range(10):
-    for j in range(10):
+  for i in range(len(a)):
+    for j in range(len(a)):
       if (i == j):
-        principal.append(a[i][j])
-        secundaria.append(a)
+        principal.append(a[i][j])        
 
-def printarMatrizLinhas(matriz):
+  condicao = True
+  co = 0
+  while(condicao == True):
+    secundaria.append(a[co][(len(a) -1) - co])
+    a[co][(len(a) -1) - co] = principal[len(principal) - 1]
+    co = co + 1
+    if (co == (len(a))):
+      condicao = False
+
+  for i in range(len(a)):
+    for j in range(len(a)):
+      if (i == j):
+        a[i][j] = secundaria[i]
+  
+  return a
+
+def alterarMatriz(a: list):
+  a = linha2para8(a)
+  a = mudarDuasColunas(a, 4, 10)
+  a = inverterDiagonais(a)
+  a = mudarDuasColunas(a, 5, 10)
+
+  return a
+
+def printarMatrizLinhas(matriz: list):
   for i in range(len(matriz)):
     print(matriz[i])
 
@@ -61,7 +79,5 @@ matrizA = [random.randint(0, 100)] * 10
 for i in range(10):
     matrizA[i] = [random.randint(0, 100)] * 10
 
-printarMatrizLinhas(matrizA)
 matrizA = alterarMatriz(matrizA)
-print('')
 printarMatrizLinhas(matrizA)

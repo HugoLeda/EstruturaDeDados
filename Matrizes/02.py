@@ -11,8 +11,7 @@ def somarLinhasPares(b: list):
   return soma
 
 matrizB = [0] * 9
-
-for i in range(9):
+for i in range(len(matrizB)):
     matrizB[i] = [random.randint(0, 100)] * 9
 
 def printarMatrizLinhas(matriz):
