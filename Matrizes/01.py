@@ -27,11 +27,11 @@ def mudarDuasColunas(a: list, c1: int, c2: int):
   colx = []
   coly = []
 
-  for i in range(10):
+  for i in range(len(a)):
     colx.append(a[i][c1 - 1])
     coly.append(a[i][c2 - 1])
 
-  for i in range(10):
+  for i in range(len(a)):
     a[i][c1 - 1] = colx[i]
     a[i][c2 - 1] = coly[i]
   
@@ -39,7 +39,8 @@ def mudarDuasColunas(a: list, c1: int, c2: int):
 
 def alterarMatriz(a: list):
   a = linha2para8(a)
-  #a = mudarDuasColunas(a, 4, 10)
+  a = mudarDuasColunas(a, 4, 10)
+  a = mudarDuasColunas(a, 5, 10)
 
 def inverterDiagonais(a: list):
   principal = []
@@ -50,7 +51,6 @@ def inverterDiagonais(a: list):
       if (i == j):
         principal.append(a[i][j])
         secundaria.append(a)
-
 
 def printarMatrizLinhas(matriz):
   for i in range(len(matriz)):
