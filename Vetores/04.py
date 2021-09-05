@@ -1,6 +1,6 @@
 # Escreva um algoritmo que leia um vetor de 10 posições e mostre-o ordenado em ordem crescente utilizando o método BubleSort. Escreva a quantidade de comparações que foram realizadas.
 
-def ordenarVetor(v: list):
+def bublesort(v: list):
   comp = 0
   for n in range(len(v) - 1, 0, -1):
     for i in range(n):
@@ -18,6 +18,6 @@ def lerVetor(p: int):
     res.append(n)
   return res
 
-vetor = lerVetor(5)
-res = ordenarVetor(vetor)
+vetor = lerVetor(10)
+res = bublesort(vetor)
 print(res)
