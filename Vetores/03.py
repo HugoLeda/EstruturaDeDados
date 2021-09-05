@@ -1,0 +1,1 @@
+# Escreva  um  algoritmo  que  leia  e  mostre  um  vetor  de  20  elementos inteiros.  a  seguir,  conte  quantos  valores pares existem no vetor.
