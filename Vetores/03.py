@@ -14,5 +14,5 @@ def lerVetor(p: int):
     res.append(n)
   return res
 
-lista = lerVetor(5)
+lista = lerVetor(20)
 print(f'A quantidade de números pares na lista é: {qtdPares(lista)}')
