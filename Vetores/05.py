@@ -1,7 +1,7 @@
 # Escreva um algoritmo que leia um vetor de 10 posições e mostre-o ordenado em ordem crescenteutilizando o método SelectionSort. Escreva a quantidade de comparações que foram realizadas.
 
 def selectionSort(v: list):
-  comp = 0
+  comp = 0  
 
   for i in range(0, len(v)):
     menor = i

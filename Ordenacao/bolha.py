@@ -18,6 +18,6 @@ def registrarAlunos(qtd: int):
     alunos.append(aluno)
   return alunos
 
-alunos = registrarAlunos(5)
+alunos = registrarAlunos(10)
 alunos = ordenarAlunos(alunos)
 print(alunos)
