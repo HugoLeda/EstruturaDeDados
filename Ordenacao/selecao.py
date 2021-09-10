@@ -1,0 +1,1 @@
+# Escreva um algoritimo que leia o nome e a altura de 10 alunos e os organize por ordem crescente de tamanho utilizando o selection sort, ao final exiba o nome e as alturas de forma organizada.
