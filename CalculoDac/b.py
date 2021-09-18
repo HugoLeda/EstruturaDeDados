@@ -1,0 +1,1 @@
+# Reproduza os cálculos do DAC utilizando uma listanaqual os dados do Nosso Númerosejam gerados aleatoriamente(no arquivo anexo os dados do nosso Numero são: 12345678)

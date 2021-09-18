@@ -1,0 +1,1 @@
+# Reproduza os cálculos do DAC utilizando uma listacom os valores do Exemplo 1
