@@ -49,6 +49,24 @@ def a():
   print(f'DC1: {dc1}\nDC2: {dc2}\nSequencia: {sequencia}')
 
 def b(dc1: int, dc2: int):
-  
+  numeros = [randint(0, 9)] * 9
 
-#a()
+  dc11 = gerarDc(numeros)    
+  dc22 = gerarDc(numeros)
+
+  if (dc1 == dc11 or dc2 == dc22):
+    return numeros
+  else:
+    while (dc1 != dc11 or dc2 != dc22):
+      for i in range(len(numeros)):
+        numeros[i] = randint(0, 9)
+        dc11 = gerarDc(numeros)    
+        dc22 = gerarDc(numeros)
+        if (dc1 == dc11 or dc2 == dc22):
+          return numeros
+
+a()
+sequenciab = b(6, 1)
+sequenciab.append(6)
+sequenciab.append(1)
+print(sequenciab)
