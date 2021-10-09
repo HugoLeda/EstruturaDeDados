@@ -1,0 +1,1 @@
+# Dada uma pilha S inverta a ordem de seus elementos usando Pilhas. Ex. [3,7,5,2] ➔ [2,5,7,3]
