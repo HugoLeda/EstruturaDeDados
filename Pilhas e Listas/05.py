@@ -1,0 +1,1 @@
+# 5) Faça um programa que converta um número decimal para binário usando pilhas.

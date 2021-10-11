@@ -1,0 +1,1 @@
+# Mostre a situação da pilha P, inicialmente vazia, após a execução de cada uma das operações a seguir:
