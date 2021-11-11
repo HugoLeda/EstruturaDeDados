@@ -1,4 +1,4 @@
-# Red-black tree
+<h1 align="center"> Red-black tree </h1>
 
 ## Regras
 
